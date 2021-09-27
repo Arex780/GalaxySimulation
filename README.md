@@ -11,7 +11,7 @@ libgomp1
 libjsoncpp-dev 
 ```
 ### Config
-Set simulation parameters in config.json file
+Set simulation parameters in config.json file (available integrators: Euler, Heun, RK4)
 
 ### Usage
 ```
