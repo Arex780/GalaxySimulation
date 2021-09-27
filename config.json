@@ -1,0 +1,78 @@
+{
+    "Model": "N-body",
+    "Integrator": "Heun",
+    "Time step": 1200,
+    "Simulation": "Galaxy Collision",
+    "Window size": 1000,
+    "Field of view": 35,
+    "Simulation settings":
+    {
+        "Single Galaxy":
+        {
+            "Number of particles": 12000,
+            "Bulge mass": 1000000,
+            "Bulge radius": 1,
+            "Disk radius": 10,
+            "Maximum stellar mass": 20,
+            "Minimum stellar mass": 0.1,
+            "Initial conditions":
+	        {
+                "positionX": 0,
+                "positionY": 0,
+                "velocityX": 0,
+                "velocityY": 0
+            }
+        },
+        "Galaxy Collision":
+        { 
+            "1":
+            {
+                "Number of particles": 4000,
+                "Bulge mass": 1000000,
+                "Bulge radius": 1,
+                "Disk radius": 8,
+                "Maximum stellar mass": 20,
+                "Minimum stellar mass": 0.1,
+                "Initial conditions":
+                {
+                    "positionX": 0,
+                    "positionY": 0,
+                    "velocityX": 0,
+                    "velocityY": 0
+                }
+            },
+            "2":
+            {
+                "Number of particles": 1000,
+                "Bulge mass": 100000,
+                "Bulge radius": 0.2,
+                "Disk radius": 3,
+                "Maximum stellar mass": 20,
+                "Minimum stellar mass": 0.1,
+                "Initial conditions":
+                {
+                    "positionX": 10,
+                    "positionY": 10,
+                    "velocityX": -0.00001135,
+                    "velocityY": 0.00001135
+                }
+            },
+            "3":
+            {
+                "Number of particles": 250,
+                "Bulge mass": 10000,
+                "Bulge radius": 0.1,
+                "Disk radius": 1,
+                "Maximum stellar mass": 16,
+                "Minimum stellar mass": 0.1,
+                "Initial conditions":
+                {
+                    "positionX": -9,
+                    "positionY": -13,
+                    "velocityX": 0.00000435,
+                    "velocityY": -0.00000435
+                }
+            }
+        }
+    }
+}
